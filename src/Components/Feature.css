@@ -1,0 +1,108 @@
+/* ------------------------ Features Section ---------------------- */
+
+.feature {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.feature-reverse {
+  flex-direction: row-reverse;
+  background-color: rgb(15, 27, 14);
+}
+
+.feature-detail,
+.feature-img {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-detail {
+  flex-direction: column;
+}
+
+.feature-detail .feature-text-box {
+  width: 300px;
+}
+
+.feature-black-heading {
+  color: rgb(0, 0, 0);
+}
+
+.feature-img img {
+  width: 200px;
+  border-radius: 25px;
+  box-shadow: -5px -5px 25px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature-reverse img {
+  box-shadow: -5px -5px 25px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature-reverse .feature-black-heading,
+.feature-reverse p {
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .feature {
+    padding: 40px;
+  }
+
+  .feature-img img {
+    width: 170px;
+  }
+}
+
+@media (max-width: 620px) {
+  .feature {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .feature-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .feature-detail {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .feature-detail .feature-text-box {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .feature-img img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 321px) {
+  .feature {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .feature-detail {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .feature-detail .feature-text-box {
+    padding: 10px;
+  }
+
+  .feature-img img {
+    width: 100px;
+  }
+}

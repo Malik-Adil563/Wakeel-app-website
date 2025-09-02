@@ -1,0 +1,206 @@
+.online-dealings {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.online-dealings .odealings-img {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.odealings-img .img-box {
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.odealings-img .img-box .hero-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, transparent, rgb(255, 255, 255, 0.2));
+}
+
+.odealings-img .img-box img {
+  height: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  margin-left: 0px !important;
+}
+
+.odealings-img .img-box .hero-bg {
+  background: linear-gradient(to bottom, transparent, rgba(15, 43, 26, 0.2));
+}
+
+.online-dealings .odealings {
+  width: 50%;
+  height: 100% !important;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.odealings .offered-services {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  font-style: italic;
+}
+
+.odealings .oservice-name {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.oservice-icon {
+  font-size: 24px;
+}
+
+.oservice {
+  width: 100%;
+  padding: 10px;
+}
+
+.oservice span {
+  padding-left: 20px;
+  margin-top: -8px;
+  letter-spacing: 1.2px;
+}
+
+.oservice-detail {
+  padding: 5px 40px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.border {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1024px) {
+  .odealings {
+    padding: 10px;
+  }
+
+  .odealings-img .img-box {
+    padding: 0px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .odealings-img .img-box img {
+    height: 300px;
+  }
+
+  .online-dealings .odealings {
+    padding: 10px;
+  }
+  .odealings .global-heading {
+    margin-bottom: 20px;
+  }
+  .oservice {
+    padding: 10px 0px;
+  }
+
+  .odealings .oservice-name {
+    font-size: 16px;
+  }
+
+  .oservice-icon {
+    font-size: 18px;
+  }
+
+  .oservice span {
+    padding-left: 10px;
+    letter-spacing: 1px;
+  }
+
+  .oservice-detail {
+    padding: 0px;
+    padding-left: 30px;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 780px) {
+  .oservice-detail {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 620px) {
+  .online-dealings {
+    width: 100%;
+    display: block;
+    padding: 20px;
+  }
+
+  .online-dealings .odealings-img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .odealings-img .img-box {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+  }
+
+  .odealings-img .img-box img {
+    height: 220px;
+  }
+
+  .online-dealings .odealings {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .oservice-detail {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 376px) {
+  .odealings-img .img-box {
+    width: 175px;
+    height: 175px;
+  }
+
+  .odealings-img .img-box img {
+    height: 190px;
+  }
+}
+
+@media (max-width: 321px) {
+  .odealings-img .img-box {
+    width: 115px;
+    height: 115px;
+  }
+
+  .odealings-img .img-box img {
+    height: 145px;
+  }
+}

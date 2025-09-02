@@ -1,0 +1,153 @@
+.Swiper {
+  padding: 30px 60px;
+  height: 430px;
+}
+
+.slider-card {
+  display: flex;
+  height: 380px !important;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 5px 0 25px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.card-heading {
+  color: rgb(3, 218, 3);
+  font-size: 33px;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.card-paragraph {
+  font-size: 18px;
+  font-weight: 200;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.slider-card .global-btn {
+  padding: 7px 20px !important;
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: black;
+  font-size: 35px;
+}
+
+@media (max-width: 1024px) {
+  .Swiper {
+    height: 400px !important;
+    padding: 20px 40px;
+  }
+
+  .slider-card {
+    height: 350px !important;
+    padding: 20px;
+  }
+
+  .card-heading {
+    font-size: 30px;
+  }
+
+  .card-paragraph {
+    font-size: 16px;
+  }
+
+  .slider-card .global-btn {
+    padding: 7px 20px !important;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 769px) {
+  .Swiper {
+    height: 310px !important;
+  }
+
+  .slider-card {
+    height: 260px !important;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  .Swiper {
+    height: 300px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .slider-card {
+    height: 250px !important;
+    padding: 20px;
+  }
+
+  .card-heading {
+    font-size: 24px;
+    padding-bottom: 0px;
+  }
+
+  .card-paragraph {
+    font-size: 16px;
+  }
+
+  .slider-card .global-btn {
+    padding: 7px 15px !important;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 440px) {
+  .Swiper {
+    height: 350px !important;
+  }
+
+  .slider-card {
+    height: 300px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .Swiper {
+    height: 420px !important;
+  }
+
+  .slider-card {
+    height: 370px !important;
+  }
+}
+
+@media (max-width: 321px) {
+  .Swiper {
+    height: 400px !important;
+    padding: 10px;
+  }
+
+  .slider-card {
+    height: 350px !important;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .card-heading {
+    font-size: 18px;
+  }
+
+  .card-paragraph {
+    font-size: 14px;
+  }
+
+  .slider-card .global-btn {
+    padding: 7px 15px !important;
+    font-size: 13px;
+  }
+}
