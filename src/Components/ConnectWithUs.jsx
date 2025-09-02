@@ -1,15 +1,15 @@
 /* eslint-disable import/no-unresolved */
 /* eslint-disable quotes */
-import React, { useState, useEffect } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/effect-fade";
-import "swiper/css/navigation";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
-import { Navigation } from "swiper/modules";
-import { useNavigate } from "react-router-dom";
-import connectWithUs from "../Data/connectWithUs";
+import React, { useState, useEffect } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+import { Navigation } from 'swiper/modules';
+import { useNavigate } from 'react-router-dom';
+import connectWithUs from '../Data/connectWithUs';
 
 function ConnectWithUs() {
   const [slides, setSlides] = useState(2);
@@ -31,9 +31,9 @@ function ConnectWithUs() {
 
   useEffect(() => {
     resizeSlider();
-    window.addEventListener("resize", resizeSlider);
+    window.addEventListener('resize', resizeSlider);
     return () => {
-      window.removeEventListener("resize", resizeSlider);
+      window.removeEventListener('resize', resizeSlider);
     };
   }, []);
 
@@ -45,25 +45,12 @@ function ConnectWithUs() {
         <span className="block w-16 h-1 bg-indigo-600 mx-auto mt-3 rounded"></span>
       </h1>
 
-      <Swiper
-        spaceBetween={space}
-        slidesPerView={slides}
-        modules={[Navigation]}
-        className="mySwiper"
-      >
+      <Swiper spaceBetween={space} slidesPerView={slides} modules={[Navigation]} className="mySwiper">
         {connectWithUs.map((card) => (
-          <SwiperSlide
-            key={card.id}
-            className="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 text-center"
-          >
-            <h2 className="text-xl font-semibold text-gray-800 mb-3">
-              {card.heading}
-            </h2>
+          <SwiperSlide key={card.id} className="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 text-center">
+            <h2 className="text-xl font-semibold text-gray-800 mb-3">{card.heading}</h2>
             <p className="text-gray-600 mb-5">{card.paragraph}</p>
-            <button
-              className="px-5 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-300"
-              onClick={() => navigate(card.link)}
-            >
+            <button className="px-5 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-300" onClick={() => navigate(card.link)}>
               Read More
             </button>
           </SwiperSlide>

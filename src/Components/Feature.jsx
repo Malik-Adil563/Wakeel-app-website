@@ -23,16 +23,14 @@ function Feature() {
             Everything You Need for
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-green to-emerald-600"> Legal Success</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Discover powerful features designed to make legal assistance accessible, efficient, and reliable for everyone.
-          </p>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Discover powerful features designed to make legal assistance accessible, efficient, and reliable for everyone.</p>
         </div>
 
         {/* Features Grid */}
         <div className="space-y-16 lg:space-y-24">
           {featureSection.map((feature, index) => (
-            <div 
-              key={feature.id} 
+            <div
+              key={feature.id}
               className={`
                 grid lg:grid-cols-2 gap-8 lg:gap-16 items-center
                 ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}
@@ -49,17 +47,11 @@ function Feature() {
                 {/* Title */}
                 <h3 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-800 leading-tight">
                   {feature.title}
-                  {feature.greenTitle && (
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-green to-emerald-600">
-                      {` ${feature.greenTitle}`}
-                    </span>
-                  )}
+                  {feature.greenTitle && <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-green to-emerald-600">{` ${feature.greenTitle}`}</span>}
                 </h3>
 
                 {/* Description */}
-                <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
-                  {feature.detail}
-                </p>
+                <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">{feature.detail}</p>
 
                 {/* Feature Highlights */}
                 <div className="flex flex-wrap gap-3 pt-4">
@@ -90,14 +82,13 @@ function Feature() {
               <div className={`relative ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
                 <div className="relative group">
                   {/* Background Decoration */}
-                  <div className={`
+                  <div
+                    className={`
                     absolute inset-0 bg-gradient-to-br rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500
-                    ${index % 2 === 0 
-                      ? 'from-primary-green/50 to-emerald-600/50' 
-                      : 'from-accent-gold/50 to-yellow-500/50'
-                    }
-                  `}></div>
-                  
+                    ${index % 2 === 0 ? 'from-primary-green/50 to-emerald-600/50' : 'from-accent-gold/50 to-yellow-500/50'}
+                  `}
+                  ></div>
+
                   {/* Image Container */}
                   <div className="relative bg-white rounded-3xl p-4 lg:p-6 shadow-2xl group-hover:shadow-3xl transform group-hover:-translate-y-2 transition-all duration-500">
                     {/* Top Bar */}
@@ -106,29 +97,26 @@ function Feature() {
                       <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
                       <div className="w-3 h-3 bg-green-400 rounded-full"></div>
                     </div>
-                    
+
                     {/* Main Image */}
                     <div className="relative overflow-hidden rounded-2xl">
-                      <img 
-                        src={feature.img} 
-                        alt={`${feature.title} feature illustration`}
-                        className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
-                      />
-                      
+                      <img src={feature.img} alt={`${feature.title} feature illustration`} className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" />
+
                       {/* Overlay Effect */}
-                      <div className={`
+                      <div
+                        className={`
                         absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500
-                      `}></div>
+                      `}
+                      ></div>
                     </div>
 
                     {/* Floating Elements */}
-                    <div className={`
+                    <div
+                      className={`
                       absolute -top-4 -right-4 w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg transform group-hover:scale-110 transition-transform duration-300
-                      ${index % 2 === 0 
-                        ? 'bg-gradient-to-br from-primary-green to-emerald-600' 
-                        : 'bg-gradient-to-br from-accent-gold to-yellow-500'
-                      }
-                    `}>
+                      ${index % 2 === 0 ? 'bg-gradient-to-br from-primary-green to-emerald-600' : 'bg-gradient-to-br from-accent-gold to-yellow-500'}
+                    `}
+                    >
                       <Sparkles className="w-6 h-6" />
                     </div>
                   </div>
@@ -136,9 +124,7 @@ function Feature() {
                   {/* Side Stats */}
                   <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 transform group-hover:scale-105 transition-transform duration-300">
                     <div className="text-center">
-                      <div className={`text-2xl font-bold ${index % 2 === 0 ? 'text-primary-green' : 'text-accent-gold'}`}>
-                        99%
-                      </div>
+                      <div className={`text-2xl font-bold ${index % 2 === 0 ? 'text-primary-green' : 'text-accent-gold'}`}>99%</div>
                       <div className="text-sm text-gray-600">Success Rate</div>
                     </div>
                   </div>
@@ -151,12 +137,8 @@ function Feature() {
         {/* Bottom CTA */}
         <div className="mt-20 text-center">
           <div className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-3xl p-8 lg:p-12 text-white">
-            <h3 className="text-2xl lg:text-3xl font-bold mb-4">
-              Ready to Experience These Features?
-            </h3>
-            <p className="text-lg lg:text-xl mb-8 text-gray-300">
-              Download Wakeel App today and transform your legal experience
-            </p>
+            <h3 className="text-2xl lg:text-3xl font-bold mb-4">Ready to Experience These Features?</h3>
+            <p className="text-lg lg:text-xl mb-8 text-gray-300">Download Wakeel App today and transform your legal experience</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-gradient-to-r from-primary-green to-emerald-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:from-emerald-600 hover:to-primary-green transform hover:scale-105 transition-all duration-300 shadow-lg">
                 Download Now

@@ -6,7 +6,6 @@ function Services() {
   return (
     <section id="services" className="py-16 lg:py-24 bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Services Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-primary-green mb-6 relative inline-block">
@@ -15,17 +14,16 @@ function Services() {
           </h2>
 
           <p className="text-lg lg:text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
-            Wakeel App revolutionizes legal consultations. Clients register, search attorneys by location or specialty, 
-            and book appointments instantly. Post cases for competitive bidding, while lawyers manage schedules 
-            and create digital prescriptions seamlessly.
+            Wakeel App revolutionizes legal consultations. Clients register, search attorneys by location or specialty, and book appointments instantly. Post cases for competitive bidding, while
+            lawyers manage schedules and create digital prescriptions seamlessly.
           </p>
         </div>
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10">
           {ServicesData.map((item, _index) => (
-            <div 
-              key={item.title} 
+            <div
+              key={item.title}
               className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-8 border border-gray-100 hover:border-primary-green/20"
             >
               {/* Service Icon */}
@@ -36,14 +34,10 @@ function Services() {
               </div>
 
               {/* Service Title */}
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-center group-hover:text-primary-green transition-colors duration-300">
-                {item.title}
-              </h3>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4 text-center group-hover:text-primary-green transition-colors duration-300">{item.title}</h3>
 
               {/* Service Description */}
-              <p className="text-gray-600 text-center leading-relaxed mb-6 line-clamp-3">
-                {item.description}
-              </p>
+              <p className="text-gray-600 text-center leading-relaxed mb-6 line-clamp-3">{item.description}</p>
 
               {/* CTA Button */}
               <div className="flex justify-center">
@@ -63,12 +57,8 @@ function Services() {
         {/* Bottom CTA Section */}
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-secondary-green to-gray-900 rounded-3xl p-8 lg:p-12">
-            <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-              Ready to Get Started?
-            </h3>
-            <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-              Join thousands of satisfied clients who trust Wakeel App for their legal needs
-            </p>
+            <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4">Ready to Get Started?</h3>
+            <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">Join thousands of satisfied clients who trust Wakeel App for their legal needs</p>
             <Link to="https://play.google.com/store/apps" target="_blank">
               <button className="bg-gradient-to-r from-primary-green to-green-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-green-500 hover:to-primary-green transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl">
                 Download Now

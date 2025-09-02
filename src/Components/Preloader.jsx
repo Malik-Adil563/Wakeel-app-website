@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable quotes */
-import React, { useState, useEffect } from "react";
-import { logo } from "../Images";
+import React, { useState, useEffect } from 'react';
+import { logo } from '../Images';
 
 function Preloader({ isLoading }) {
   const [loadingPercentage, setLoadingPercentage] = useState(0);
@@ -10,9 +10,7 @@ function Preloader({ isLoading }) {
     let interval;
     if (isLoading) {
       interval = setInterval(() => {
-        setLoadingPercentage((prevPercentage) => 
-          prevPercentage < 100 ? prevPercentage + 1 : prevPercentage
-        );
+        setLoadingPercentage((prevPercentage) => (prevPercentage < 100 ? prevPercentage + 1 : prevPercentage));
       }, 30);
     } else {
       setTimeout(() => {
@@ -41,7 +39,7 @@ function Preloader({ isLoading }) {
         {/* Logo with Loading Effect */}
         <div className="relative">
           <div className="absolute inset-0 bg-primary-green/30 rounded-full blur-2xl animate-pulse"></div>
-          <div 
+          <div
             className="relative w-32 h-12 bg-cover bg-center bg-no-repeat transition-all duration-300 transform hover:scale-105"
             style={{
               backgroundImage: `linear-gradient(to top, transparent ${loadingPercentage}%, rgba(255,255,255,0.9) ${loadingPercentage}%), url(${logo})`,
@@ -51,22 +49,15 @@ function Preloader({ isLoading }) {
 
         {/* Loading Text and Progress */}
         <div className="text-center space-y-4">
-          <h2 className="text-2xl font-semibold text-white">
-            Loading Wakeel App
-          </h2>
-          
+          <h2 className="text-2xl font-semibold text-white">Loading Wakeel App</h2>
+
           {/* Progress Bar */}
           <div className="w-64 h-2 bg-white/20 rounded-full overflow-hidden">
-            <div 
-              className="h-full bg-gradient-to-r from-primary-green to-accent-gold transition-all duration-300 ease-out"
-              style={{ width: `${loadingPercentage}%` }}
-            />
+            <div className="h-full bg-gradient-to-r from-primary-green to-accent-gold transition-all duration-300 ease-out" style={{ width: `${loadingPercentage}%` }} />
           </div>
-          
+
           {/* Percentage */}
-          <p className="text-lg font-light text-gray-300">
-            {loadingPercentage}%
-          </p>
+          <p className="text-lg font-light text-gray-300">{loadingPercentage}%</p>
         </div>
 
         {/* Loading Dots */}
