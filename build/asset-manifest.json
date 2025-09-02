@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fe8b0adf.css",
-    "main.js": "/static/js/main.baf4bece.js",
+    "main.css": "/static/css/main.a68f7818.css",
+    "main.js": "/static/js/main.820ac6ee.js",
     "static/media/wakiels-list.png": "/static/media/wakiels-list.07aa87b0f7addf6288ca.png",
     "static/media/userprofile.png": "/static/media/userprofile.696a4653f66badbd0ae3.png",
     "static/media/home.png": "/static/media/home.ed0d02d86829d5380c3f.png",
@@ -9,16 +9,15 @@
     "static/media/shedule.png": "/static/media/shedule.1c4d7dbe1709f0beae75.png",
     "static/media/chat.png": "/static/media/chat.4249ddad8f337f3dcd0d.png",
     "static/media/shedule-2.png": "/static/media/shedule-2.e206ccd0a5e506dd9bb2.png",
-    "static/media/circle-hollow.png": "/static/media/circle-hollow.4ec0cf7a534a88c172df.png",
     "static/media/emoji.png": "/static/media/emoji.0ada6ea4934b32a95e94.png",
     "static/media/image-two.jpg": "/static/media/image-two.d4372e5541a49836edf5.jpg",
     "static/media/message-image.jpeg": "/static/media/message-image.1cda95bb199d08094bd3.jpeg",
     "index.html": "/index.html",
-    "main.fe8b0adf.css.map": "/static/css/main.fe8b0adf.css.map",
-    "main.baf4bece.js.map": "/static/js/main.baf4bece.js.map"
+    "main.a68f7818.css.map": "/static/css/main.a68f7818.css.map",
+    "main.820ac6ee.js.map": "/static/js/main.820ac6ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe8b0adf.css",
-    "static/js/main.baf4bece.js"
+    "static/css/main.a68f7818.css",
+    "static/js/main.820ac6ee.js"
   ]
 }
