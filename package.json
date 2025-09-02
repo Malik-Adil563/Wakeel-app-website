@@ -23,16 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint \"src/**/*.{js,jsx}\"",
-    "lint:fix": "eslint --fix \"src/**/*.{js,jsx}\"",
-    "format": "prettier --write --ignore-path .gitignore \"**/*.{js,json,scss,css,html,jsx}\""
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "eject": "react-scripts eject"
   },
   "browserslist": {
     "production": [
@@ -48,22 +39,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.28.3",
-    "@babel/eslint-parser": "^7.28.0",
     "@babel/preset-env": "^7.28.3",
     "@babel/preset-react": "^7.27.1",
     "babel-loader": "^10.0.0",
-    "eslint": "^9.34.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-prettier": "^5.5.4",
-    "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^5.2.0",
     "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.4",
     "husky": "^9.1.7",
-    "prettier": "^3.6.2",
     "webpack": "^5.101.3",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2"
