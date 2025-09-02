@@ -1,4 +1,4 @@
-import { Emoji } from '../Images';
+import { Emoji } from "../Images";
 
 const SecondaryNavbar = {
   line: "Download the latest version of ",
