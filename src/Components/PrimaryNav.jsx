@@ -2,11 +2,11 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable quotes */
-import { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { Download } from 'lucide-react';
-import { logo } from '../Images';
-import PrimaryNavbar from '../Data/PrimaryNavbar';
+import { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { Download } from "lucide-react";
+import { logo } from "../Images";
+import PrimaryNavbar from "../Data/PrimaryNavbar";
 
 function PrimaryNav() {
   const [toggle, setToggle] = useState(false);
