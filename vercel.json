@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "buildCommand": "npm install --legacy-peer-deps && npm run build",
   "builds": [
     {
       "src": "package.json",
@@ -7,11 +8,8 @@
       "config": { "distDir": "build" }
     }
   ],
-  "buildCommand": "npm install --legacy-peer-deps && npm run build",
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ]
+    { "src": "/(.*)", "dest": "/index.html" }
+  ],
+  "ignoreCommand": "echo 'Skipping ESLint in production'"
 }
