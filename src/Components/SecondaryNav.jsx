@@ -1,4 +1,3 @@
-/* eslint-disable quotes */
 import React from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';

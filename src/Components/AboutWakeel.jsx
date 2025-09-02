@@ -1,4 +1,3 @@
-/* eslint-disable quotes */
 import React from 'react';
 import { Users, Target, Scale, Shield, CheckCircle, Star } from 'lucide-react';
 import { Profile } from '../Images';

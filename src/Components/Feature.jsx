@@ -1,4 +1,3 @@
-/* eslint-disable quotes */
 import React from 'react';
 import { ArrowRight, Sparkles, Zap, Shield } from 'lucide-react';
 import featureSection from '../Data/featureSection';

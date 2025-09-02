@@ -1,16 +1,16 @@
 /* eslint-disable quotes */
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import Preloader from './Components/Preloader';
-import Home from './Pages/Home';
-import BlogPost from './Pages/BlogPost';
-import NotFound from './Pages/NotFound';
-import connectWithUs from './Data/connectWithUs';
-import TermsAndConditions from './Pages/TermsAndCondition';
-import PrivacyPolicy from './Pages/PrivacyPolicy';
-import FAQs from './Pages/FAQs';
+import Header from './Components/Header.jsx';
+import Footer from './Components/Footer.jsx';
+import Preloader from './Components/Preloader.jsx';
+import Home from './Pages/Home.jsx';
+import BlogPost from './Pages/BlogPost.jsx';
+import NotFound from './Pages/NotFound.jsx';
+import connectWithUs from './Data/connectWithUs.jsx';
+import TermsAndConditions from './Pages/TermsAndCondition.jsx';
+import PrivacyPolicy from './Pages/PrivacyPolicy.jsx';
+import FAQs from './Pages/FAQs.jsx';
 
 // Custom styles for animations and effects not available in Tailwind
 const customStyles = `

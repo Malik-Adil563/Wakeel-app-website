@@ -1,4 +1,3 @@
-/* eslint-disable quotes */
 import React from 'react';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { WakeelAccount } from '../Images';
