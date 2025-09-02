@@ -1,5 +1,4 @@
-// featureSection.js
-const { MessageCircle, UserCheck, Search } = require("lucide-react");
+import { MessageCircle, UserCheck, Search } from "lucide-react";
 
 const featureSection = [
   {
@@ -28,4 +27,4 @@ const featureSection = [
   },
 ];
 
-module.exports = featureSection;
+export default featureSection;
